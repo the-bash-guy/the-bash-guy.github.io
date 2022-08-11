@@ -1,35 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="./bootstrap-5.1.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Just Do It!">
+  <meta property="og:image" itemprop="image"
+    content="https://doglife2007.github.io/just_do_it.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+  <meta property="og:url" content="https://doglife2007.github.io">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>the-bash-guy's Site (YouTube: the-bash-guy)</title>
-    <style>
-      body {
-        background-color: black;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./favicon.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
-            Just DO IT!
-          </a>
-        </div>
-      </nav>
-      <div class="container my-5 text-center" style="max-width: 640px;">
-        <h1 class="text-white">Ciao! Qui hai a disposizione varie risorse.</h1>
-        <a class="btn btn-dark my-1" href="./noescape/" role="button">Sito principale (Jumpscare)</a>
-        <a class="btn btn-danger my-1" href="https://www.youtube.com/channel/UCEljsGDjhXhqjUl2QFnSmzg" role="button">Youtube Channel</a>
-        <a class="btn btn-info my-1" href="./ciruzzo/" role="button">Ciruzzo Store</a>
-        <a class="btn btn-primary my-1" href="https://github.com/DogLife2007" role="button">GitHub</a>
-      </div>
-    
-    <script src="bootstrap-5.1.js"></script>
-  </body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style id="navbar-style">
+  </style>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+
+  <title>Title</title>
+</head>
+
+<body>
+  <div class="container my-5 text-center d-grid gap-2" style="max-width: 640px;">
+    <h1 class="text-white">Ciao! Qui hai a disposizione varie risorse.</h1>
+    <a class="btn btn-dark my-1" href="./noescape/" role="button">Sito principale (Jumpscare)</a>
+    <a class="btn btn-danger my-1" href="https://www.youtube.com/channel/UCEljsGDjhXhqjUl2QFnSmzg" role="button">Youtube
+      Channel</a>
+    <a class="btn btn-info my-1" href="./ciruzzo/" role="button">Ciruzzo Store</a>
+    <a class="btn btn-primary my-1" href="https://github.com/DogLife2007" role="button">GitHub</a>
+  </div>
+  <div id="navb"></div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('#navb').load("/navbar.html");
+    $('#navbar-style').load("/navbar.css");
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>

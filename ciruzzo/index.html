@@ -1,61 +1,76 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="./../bootstrap-5.1.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Just Do It!">
+  <meta property="og:image" itemprop="image" content="https://doglife2007.github.io/just_do_it.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="300">
+  <meta property="og:image:height" content="300">
+  <meta property="og:url" content="https://doglife2007.github.io">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Ciruzzo Store</title>
-    <style>
-       body {
-         background-color: black;
-       }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./ciropng.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
-            Ciruzzo store
-          </a>
-        </div>
-      </nav>
-      <div class="container text-center">
-            <h1 class="text-white">Compra oggetti da Ciruzzo, il rivenditore più affidabile che esista!</h1>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <style id="navbar-style">
+  </style>
+  <style>
+    body {
+      background-color: black;
+    }
+  </style>
+
+  <title>Title</title>
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 class="text-white">Compra oggetti da Ciruzzo, il rivenditore più affidabile che esista!</h1>
+  </div>
+  <div class="container text-center">
+    <h1 class="text-white">(MESSAGE FOR GITHUB) THIS IS NOT AN E-SHOP OR AN E-COMMERCE PAGE, IT'S ONLY MADE FOR FUN.
+    </h1>
+  </div>
+  <div class="card-group">
+    <div class="card bg-secondary col-md-3 mx-3" style="width: 18rem;">
+      <img src="./items/iciruzz12pro/12pro.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">iCiruzz 12 Pro</h5>
+        <p class="card-text">L'iPhone che vorresti</p>
+        <a href="./items/iciruzz12pro/" class="btn btn-dark">Più dettagli</a>
+      </div>
     </div>
-    <div class="container text-center">
-      <h1 class="text-white">(MESSAGE FOR GITHUB) THIS IS NOT AN E-SHOP OR AN E-COMMERCE PAGE, IT'S ONLY MADE FOR FUN.</h1>
+    <div class="card bg-secondary col-md-3 mx-3" style="width: 18rem;">
+      <img src="./items/rolex/rolex.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cirolex</h5>
+        <p class="card-text">Rolex normalissimo ma ricavato con tecniche segrete che non si possono dire</p>
+        <a href="./items/rolex/" class="btn btn-dark">Più dettagli</a>
+      </div>
     </div>
-    <div class="card-group">
-        <div class="card bg-secondary col-md-3 mx-3" style="width: 18rem;">
-            <img src="./items/iciruzz12pro/12pro.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">iCiruzz 12 Pro</h5>
-              <p class="card-text">L'iPhone che vorresti</p>
-              <a href="./items/iciruzz12pro/" class="btn btn-dark">Più dettagli</a>
-            </div>
-          </div>
-          <div class="card bg-secondary col-md-3 mx-3" style="width: 18rem;">
-            <img src="./items/rolex/rolex.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Cirolex</h5>
-              <p class="card-text">Rolex normalissimo ma ricavato con tecniche segrete che non si possono dire</p>
-              <a href="./items/rolex/" class="btn btn-dark">Più dettagli</a>
-            </div>
-          </div>
-          <div class="card bg-secondary col-md-3 mx-3" style="width: 18rem;">
-            <img src="./items/rtx3090/rtx3090.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">CIROTX 3090</h5>
-              <p class="card-text">RTX3090 edizione Napoli con una ventola
-                  che suona la Tarantella
-              </p>
-              <a href="./items/rtx3090/" class="btn btn-dark">Più dettagli</a>
-            </div>
-          </div>
+    <div class="card bg-secondary col-md-3 mx-3" style="width: 18rem;">
+      <img src="./items/rtx3090/rtx3090.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CIROTX 3090</h5>
+        <p class="card-text">RTX3090 edizione Napoli con una ventola
+          che suona la Tarantella
+        </p>
+        <a href="./items/rtx3090/" class="btn btn-dark">Più dettagli</a>
+      </div>
     </div>
-    <script src="./../bootstrap-5.1.js"></script>
-  </body>
+  </div>
+  <div id="navb"></div>
+</body>
+<script>
+  $(document).ready(function () {
+    $('#navb').load("/navbar.html");
+    $('#navbar-style').load("/navbar.css");
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 </html>

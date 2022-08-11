@@ -1,0 +1,7 @@
+li#navb-item a:hover {
+    background: darkslategrey;
+    color: darkslategrey;
+}
+li#navb-item a {
+    font: 16px "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+}

@@ -1,0 +1,34 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid text-white">
+        <a class="navbar-brand"
+            href="https://knowyourmeme.com/memes/shia-labeoufs-intense-motivational-speech-just-do-it"
+            data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Just Do It!">
+            <img src="https://raw.githubusercontent.com/DogLife2007/DogLife2007.github.io/main/favicon.png" alt=""
+                width="50" height="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item" id="navb-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item" id="navb-item">
+                    <a class="nav-link active" aria-current="page" href="https://github.com/DogLife2007"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="My GitHub profile">GitHub</a>
+                </li>
+                <li class="nav-item" id="navb-item">
+                    <a class="nav-link active" aria-current="page" href="/filerepo" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" data-bs-title="The files in there are f*ckin useless">File
+                        repository</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
